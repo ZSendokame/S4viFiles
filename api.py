@@ -21,7 +21,7 @@ def root():
 def readme():
     return render_template('readme.html')
 
-@app.get('/download/<filename>')
+@app.get('/view/<filename>')
 def returnFile(filename):
     return send_file('./files//' + filename)
 
